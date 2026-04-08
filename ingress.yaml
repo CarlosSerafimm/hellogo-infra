@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   rules:
-    - host: pipeline.98.95.125.53.sslip.io
+    - host: pipeline.98.90.234.44.sslip.io
       http:
         paths:
           - backend:
