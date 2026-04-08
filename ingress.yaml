@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: hellogo
+  namespace: default
+spec:
+  rules:
+    - host: pipeline.98.95.125.53.sslip.io
+      http:
+        paths:
+          - backend:
+              service:
+                name: hellogo
+                port:
+                  number: 8080
+            path: /
+            pathType: Prefix
